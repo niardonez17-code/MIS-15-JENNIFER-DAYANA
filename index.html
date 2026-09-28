@@ -84,15 +84,25 @@ footer{padding:35px 20px;text-align:center;font-size:14px;color:#7088a2}
  <div class="container">
   <div class="small">Una historia que comenzó</div>
   <div class="line"></div>
-  <img class="baby" <img src="bebe.jpeg" class="foto-bebe" alt="Jennifer de bebé">
+  <img src="bebe.jpeg" class="foto-bebe" alt="Jennifer de bebé">
 
 <style>
 .foto-bebe {
-    width: 110px;       /* CAMBIA EL ANCHO AQUÍ */
-    height: 100px;      /* CAMBIA EL ALTO AQUÍ */
+    width: 85%;
+    max-width: 680px;
+    height: auto;
+    display: block;
+    margin: 28px auto;
     object-fit: cover;
     object-position: center;
-    border-radius: 15px;
+    border-radius: 20px;
+    box-shadow: 0 8px 28px rgba(73,105,143,.12);
+}
+@media(max-width:600px){
+.foto-bebe {
+    width: 88%;
+    max-width: 680px;
+}
 }
 </style>
   <div class="small">y hoy se convierte en un sueño</div>
